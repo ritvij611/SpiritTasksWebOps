@@ -1,0 +1,164 @@
+.head{
+    background-color: darkcyan;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    display: flex;
+    width: auto;
+}
+
+.head input{
+    height: 25px;
+}
+
+body{
+    background-color: aquamarine;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    height: auto;
+    width: 55%;
+    padding-bottom: 10px;
+}
+
+.youtube{
+    background-color: red;
+    height: 4rem;
+    width: 8rem;
+    border-radius: 2rem;
+    text-align: center;
+    align-content: center;
+    color: white;
+    display: grid;
+    text-decoration: none;
+    
+}
+
+.drop-down{
+    background-color: darkblue;
+    height: 4rem;
+    width: 8rem;
+    border-radius: 2rem;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.stick{
+    background-color: darkblue;
+    height: 4rem;
+    width: 8rem;
+    border-radius: 2rem;
+    text-align: center;
+    color: white;
+    display: grid;
+    align-content: center;
+    position: fixed;
+    top: 77px;
+    right: 10px;
+    
+}
+
+#images{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#images div{
+    
+    width: 25rem;
+    text-align: center;
+    
+}
+
+
+
+#foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#foot img{
+    width: 30rem
+}
+
+
+
+#text{
+    
+    font-size: 2rem;
+    color: gray;
+}
+
+.footer{
+    font-family: Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    width: 10rem;
+    text-align: right;
+    padding-right: 5rem;
+}
+
+
+.reverse {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}    
+.content{
+    display: none;
+    width: 2rem;
+}
+
+.drop-down:hover .content{display: flex;
+flex-direction: column;}
+.youtube:hover {
+    font-size: x-large;
+    height: 6rem;
+    width: 10rem;
+    border-radius: 3rem;
+}
+
+
+.stick:hover {
+    font-size: x-large;
+    height: 6rem;
+    width: 10rem;
+    border-radius: 3rem;
+}
+
+.drop-down:hover {
+    font-size: x-large;
+    height: 7rem;
+    width: 12rem;
+    border-radius: 3rem;
+}
+
+@media only screen and (max-width: 700px){
+#images{display: block;}
+#foot{display: block;}
+
+}
+@media only screen and (max-width: 30rem){
+    #images div{width: 100%;}
+    #images div img{width: 100%;}
+    #foot img {width: 100%;}
+    .links{
+        display: block;
+        padding-top: 70px;
+    }
+    .stick{
+        left: 10px;
+    }
+    .footer{
+        width: 100%;
+        text-align: center;}
+}
+
