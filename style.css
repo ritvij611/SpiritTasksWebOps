@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    width: 700px;
+    height: auto;
+    background-color: dodgerblue;    
+    color:aliceblue;
+    margin-top: 100px;
+}
+
+#p{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+#iconTemp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail{
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    background-color: cadetblue;
+    border-radius: 20px;
+    
+}
+
+.temp{
+    width: 50%;
+}
+
+#location, #date, #apparentTemp, #weather{
+    text-align: center;
+}
+
+body{
+    background-color: red;
+    display: flex;
+    
+    justify-content: center;
+    justify-items: center;
+}
+
+@media only screen and (max-width: 700px){
+    .container{width: 100%;}
+}
+
+@media only screen and (max-width: 350px){
+    .container{display: block;}
+    .detail{width: 94%;
+        height: auto;}
+    .temp{width: 100%;
+    height: auto;}
+}
